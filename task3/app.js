@@ -26,7 +26,7 @@ function createTag(ttt) {
 }
 //addList();
 
-var tt = "Ñäåëàòü çàäàíèå #3 ïî web-ïðîãðàììèðîâàíèþ";
+var tt = "Сделать задание #3 по web-программированию";
 write(tt);
 
 
