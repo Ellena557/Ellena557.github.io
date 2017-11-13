@@ -9,7 +9,7 @@ function deleteText(){  // Óäàëåíèå ýëåìåíòà li
     ul.removeChild(li);
 }
 
-function createTag() {
+function createTag(t) {
     var li = document.createElement("li");
     var span = document.createElement("span");
     var del = document.createElement("button");
@@ -21,7 +21,7 @@ function createTag() {
 }
 
 function write(t) {
-    createTag();    // Çàâåðøåíèå äåéñòâèé ñ ýëåìåíòîì li
+    createTag(t);    // Çàâåðøåíèå äåéñòâèé ñ ýëåìåíòîì li
     ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
 }
 
