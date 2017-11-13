@@ -1,8 +1,8 @@
-var r = document.getElementById("root");
+var root = document.getElementById("root");
 var ul = document.createElement("ul");
 
 //function addList(){
-r.appendChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
+root.appendChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
 //}
 
 
@@ -39,5 +39,5 @@ function addInpt() {
 
 buttn.onclick = addInpt;        // Ïðè íàæàòèè íà êíîïêó äîáàâëÿåòñÿ íîâûé il
 
-r.appendChild(inpt);
-r.appendChild(buttn);
+root.appendChild(inpt);
+root.appendChild(buttn);
