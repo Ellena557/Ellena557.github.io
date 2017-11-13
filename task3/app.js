@@ -2,10 +2,10 @@ var r = document.getElementsById("root");
 var ul = document.createElement("ul");
 
 function addList(){
-    r.appenChild(ul) // Прикрепляем к корню созданный список
+    r.appenChild(ul) // ГЏГ°ГЁГЄГ°ГҐГЇГ«ГїГҐГ¬ ГЄ ГЄГ®Г°Г­Гѕ Г±Г®Г§Г¤Г Г­Г­Г»Г© Г±ГЇГЁГ±Г®ГЄ
 }
 
-function deleteText(){  // Удаление элемента li
+function deleteText(){  // Г“Г¤Г Г«ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ  li
     ul.removeChild(li);
 }
 
@@ -14,23 +14,25 @@ function createTag() {
     var span = document.createElement("span");
     var del = document.createElement("button");
     span.textContent = t;
-    del.textContent = "Удалить";    
-    del.onclick = deleteText();     // При нажатии на кнопку элемент li удаляется
+    del.textContent = "Г“Г¤Г Г«ГЁГІГј";    
+    del.onclick = deleteText();     // ГЏГ°ГЁ Г­Г Г¦Г ГІГЁГЁ Г­Г  ГЄГ­Г®ГЇГЄГі ГЅГ«ГҐГ¬ГҐГ­ГІ li ГіГ¤Г Г«ГїГҐГІГ±Гї
     li.appendChild(span);
     li.appendChild(del);
 }
 
 function write(t) {
-    createTag();    // Завершение действий с элементом li
-    ul.appendChild(li);     // Добавление элемента li в список ul
+    createTag();    // Г‡Г ГўГҐГ°ГёГҐГ­ГЁГҐ Г¤ГҐГ©Г±ГІГўГЁГ© Г± ГЅГ«ГҐГ¬ГҐГ­ГІГ®Г¬ li
+    ul.appendChild(li);     // Г„Г®ГЎГ ГўГ«ГҐГ­ГЁГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ  li Гў Г±ГЇГЁГ±Г®ГЄ ul
 }
 
-var tt = "Сделать задание #3 по web-программированию";
+var tt = "Г‘Г¤ГҐГ«Г ГІГј Г§Г Г¤Г Г­ГЁГҐ #3 ГЇГ® web-ГЇГ°Г®ГЈГ°Г Г¬Г¬ГЁГ°Г®ГўГ Г­ГЁГѕ";
 write(tt);
 
 
 var inpt = document.createElement("input");
 var buttn = document.createElement("button");
+r.appendChild(inpt);
+r.appendChild(buttn);
 inpt.id = "add_task_input";
 buttn.id = "add_task";
 
@@ -38,4 +40,4 @@ function addInpt() {
     write(inpt.value); 
 }
 
-buttn.onclick = addInpt;        // При нажатии на кнопку добавляется новый il
+buttn.onclick = addInpt;        // ГЏГ°ГЁ Г­Г Г¦Г ГІГЁГЁ Г­Г  ГЄГ­Г®ГЇГЄГі Г¤Г®ГЎГ ГўГ«ГїГҐГІГ±Гї Г­Г®ГўГ»Г© il
