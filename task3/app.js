@@ -1,5 +1,6 @@
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
+
 root.appendChild(ul); // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
 
 
