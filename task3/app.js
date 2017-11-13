@@ -2,7 +2,7 @@ var r = document.getElementById("root");
 var ul = document.createElement("ul");
 
 //function addList(){
-r.appenChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
+r.appendChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
 //}
 
 
