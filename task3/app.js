@@ -1,9 +1,8 @@
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
 
-//function addList(){
 root.appendChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
-//}
+
 
 
 function createTag(ttt) {
