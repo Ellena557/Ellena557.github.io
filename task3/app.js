@@ -1,4 +1,4 @@
-var r = document.getElementsById("root");
+var r = document.getElementById("root");
 var ul = document.createElement("ul");
 
 function addList(){
