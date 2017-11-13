@@ -3,9 +3,9 @@ var ul = document.createElement("ul");
 var li = document.createElement("li");
 vat ttt;
 
-function addList(){
-    r.appenChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
-}
+//function addList(){
+r.appenChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
+//}
 
 function deleteText(){  // Óäàëåíèå ýëåìåíòà li
     ul.removeChild(li);
@@ -20,7 +20,7 @@ function createTag(ttt) {
     li.appendChild(span);
     li.appendChild(del);
 }
-addList();
+//addList();
 function write(ttt) {
     createTag(ttt);    // Çàâåðøåíèå äåéñòâèé ñ ýëåìåíòîì li
     ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
