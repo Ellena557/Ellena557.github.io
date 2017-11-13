@@ -1,30 +1,30 @@
 var r = document.getElementById("root");
 var ul = document.createElement("ul");
-var li = document.createElement("li");
 vat ttt;
 
 //function addList(){
 r.appenChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
 //}
 
-function deleteText(){  // Óäàëåíèå ýëåìåíòà li
-    ul.removeChild(li);
-}
 
 function createTag(ttt) {
+    var li = document.createElement("li");
     var span = document.createElement("span");
     var del = document.createElement("button");
     span.textContent = ttt;
-    del.textContent = "Óäàëèòü";    
+    del.textContent = "Óäàëèòü";   
+    function deleteText(){  // Óäàëåíèå ýëåìåíòà li
+        ul.removeChild(li);
+    }
     del.onclick = deleteText();     // Ïðè íàæàòèè íà êíîïêó ýëåìåíò li óäàëÿåòñÿ
     li.appendChild(span);
     li.appendChild(del);
+    function write(ttt) {
+        createTag(ttt);    // Çàâåðøåíèå äåéñòâèé ñ ýëåìåíòîì li
+        ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
+    }
 }
 //addList();
-function write(ttt) {
-    createTag(ttt);    // Çàâåðøåíèå äåéñòâèé ñ ýëåìåíòîì li
-    ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
-}
 
 var tt = "Ñäåëàòü çàäàíèå #3 ïî web-ïðîãðàììèðîâàíèþ";
 write(tt);
