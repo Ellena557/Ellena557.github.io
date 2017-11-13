@@ -10,7 +10,7 @@ function createTag(ttt) {
     var span = document.createElement("span");
     var del = document.createElement("button");
     span.textContent = ttt;
-    del.textContent = "Óäàëèòü";   
+    del.textContent = "button";   
     function deleteText(){  // Óäàëåíèå ýëåìåíòà li
         ul.removeChild(li);
     }
@@ -35,7 +35,7 @@ buttn.id = "add_task";
 function addInpt() {
     createTag(inpt.value); 
 }
-
+buttn.textContent = 'buttn';
 buttn.onclick = addInpt;        // Ïðè íàæàòèè íà êíîïêó äîáàâëÿåòñÿ íîâûé il
 
 root.appendChild(inpt);
