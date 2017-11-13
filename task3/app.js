@@ -1,6 +1,5 @@
 var r = document.getElementById("root");
 var ul = document.createElement("ul");
-vat ttt;
 
 //function addList(){
 r.appenChild(ul) // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
