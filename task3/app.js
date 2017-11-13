@@ -20,7 +20,7 @@ function createTag(ttt) {
     li.appendChild(span);
     li.appendChild(del);
 }
-
+addList();
 function write(ttt) {
     createTag(ttt);    // Çàâåðøåíèå äåéñòâèé ñ ýëåìåíòîì li
     ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
