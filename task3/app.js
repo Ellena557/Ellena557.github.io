@@ -1,5 +1,6 @@
 var r = document.getElementById("root");
 var ul = document.createElement("ul");
+var li = document.createElement("li");
 vat ttt;
 
 function addList(){
@@ -11,7 +12,6 @@ function deleteText(){  // Óäàëåíèå ýëåìåíòà li
 }
 
 function createTag(ttt) {
-    var li = document.createElement("li");
     var span = document.createElement("span");
     var del = document.createElement("button");
     span.textContent = ttt;
