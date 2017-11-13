@@ -18,9 +18,9 @@ function createTag(ttt) {
     }    
     li.appendChild(span);
     li.appendChild(del);
-    //function write(ttt) {
-    ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
-    //}
+    function write(ttt) {
+        ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
+    }
 }
 //addList();
 
@@ -32,6 +32,8 @@ var inpt = document.createElement("input");
 var buttn = document.createElement("button");
 inpt.id = "add_task_input";
 buttn.id = "add_task";
+root.appendChild(inpt);
+root.appendChild(buttn);
 
 //function addInpt() {
  //   createTag(inpt.value); 
@@ -40,6 +42,3 @@ buttn.textContent = 'buttn';
 buttn.onclick = function() {
 	createTag(inpt.value);
 }        // Ïðè íàæàòèè íà êíîïêó äîáàâëÿåòñÿ íîâûé il
-
-root.appendChild(inpt);
-root.appendChild(buttn);
