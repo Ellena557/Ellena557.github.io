@@ -1,7 +1,6 @@
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
 
-
 root.appendChild(ul); // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
 
 
@@ -11,10 +10,12 @@ function createTag(ttt) {
     var del = document.createElement("button");
     span.textContent = ttt;
     del.textContent = "Удалить";   
-    function deleteText(){  // Óäàëåíèå ýëåìåíòà li
-        ul.removeChild(li);
-    }
-    del.onclick = deleteText();     // Ïðè íàæàòèè íà êíîïêó ýëåìåíò li óäàëÿåòñÿ
+    //function deleteText(){  // Óäàëåíèå ýëåìåíòà li
+        //ul.removeChild(li);
+    //}
+    del.onclick = function() {
+		ul.removeChild(li);
+	}    
     li.appendChild(span);
     li.appendChild(del);
     function write(ttt) {
