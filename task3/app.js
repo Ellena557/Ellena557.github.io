@@ -19,6 +19,7 @@ function createTag(ttt) {
     del.onclick = deleteText();     // Ïðè íàæàòèè íà êíîïêó ýëåìåíò li óäàëÿåòñÿ
     li.appendChild(span);
     li.appendChild(del);
+    deleteText();
 }
 
 function write(ttt) {
