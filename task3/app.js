@@ -4,13 +4,12 @@ var ul = document.createElement("ul");
 root.appendChild(ul); // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
 
 
-
 function createTag(ttt) {
     var li = document.createElement("li");
     var span = document.createElement("span");
     var del = document.createElement("button");
     span.textContent = ttt;
-    del.textContent = "button";   
+    del.textContent = "Удалить";   
     function deleteText(){  // Óäàëåíèå ýëåìåíòà li
         ul.removeChild(li);
     }
