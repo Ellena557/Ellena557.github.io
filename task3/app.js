@@ -20,14 +20,13 @@ function createTag(ttt) {
     li.appendChild(span);
     li.appendChild(del);
     function write(ttt) {
-        createTag(ttt);    // Çàâåðøåíèå äåéñòâèé ñ ýëåìåíòîì li
         ul.appendChild(li);     // Äîáàâëåíèå ýëåìåíòà li â ñïèñîê ul
     }
 }
 //addList();
 
 var tt = "Сделать задание #3 по web-программированию";
-write(tt);
+createTag(tt);
 
 
 var inpt = document.createElement("input");
@@ -36,7 +35,7 @@ inpt.id = "add_task_input";
 buttn.id = "add_task";
 
 function addInpt() {
-    write(inpt.value); 
+    createTag(inpt.value); 
 }
 
 buttn.onclick = addInpt;        // Ïðè íàæàòèè íà êíîïêó äîáàâëÿåòñÿ íîâûé il
