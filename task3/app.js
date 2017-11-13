@@ -1,6 +1,7 @@
 var root = document.getElementById("root");
 var ul = document.createElement("ul");
 
+
 root.appendChild(ul); // Ïðèêðåïëÿåì ê êîðíþ ñîçäàííûé ñïèñîê
 
 
@@ -15,7 +16,7 @@ function createTag(ttt) {
     //}
     del.onclick = function() {
 		ul.removeChild(li);
-	}    
+    }    
     li.appendChild(span);
     li.appendChild(del);
     function write(ttt) {
@@ -33,11 +34,13 @@ var buttn = document.createElement("button");
 inpt.id = "add_task_input";
 buttn.id = "add_task";
 
-function addInpt() {
-    createTag(inpt.value); 
-}
+//function addInpt() {
+ //   createTag(inpt.value); 
+//}
 buttn.textContent = 'buttn';
-buttn.onclick = addInpt;        // Ïðè íàæàòèè íà êíîïêó äîáàâëÿåòñÿ íîâûé il
+buttn.onclick = function() {
+	createTag(inpt.value);
+}        // Ïðè íàæàòèè íà êíîïêó äîáàâëÿåòñÿ íîâûé il
 
 root.appendChild(inpt);
 root.appendChild(buttn);
