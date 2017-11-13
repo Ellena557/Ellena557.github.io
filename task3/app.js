@@ -19,7 +19,6 @@ function createTag(ttt) {
     del.onclick = deleteText();     // Ïðè íàæàòèè íà êíîïêó ýëåìåíò li óäàëÿåòñÿ
     li.appendChild(span);
     li.appendChild(del);
-    deleteText();
 }
 
 function write(ttt) {
@@ -33,8 +32,6 @@ write(tt);
 
 var inpt = document.createElement("input");
 var buttn = document.createElement("button");
-r.appendChild(inpt);
-r.appendChild(buttn);
 inpt.id = "add_task_input";
 buttn.id = "add_task";
 
@@ -43,3 +40,6 @@ function addInpt() {
 }
 
 buttn.onclick = addInpt;        // Ïðè íàæàòèè íà êíîïêó äîáàâëÿåòñÿ íîâûé il
+
+r.appendChild(inpt);
+r.appendChild(buttn);
